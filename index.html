@@ -1,1 +1,47 @@
-PLACEHOLDER_WILL_REPLACE
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sigtuna</title>
+<style>
+html,body{margin:0;height:100%;background:#efece4}
+body{display:flex;align-items:center;justify-content:center}
+.map{position:relative;width:min(100vw,calc(100vh*2400/1950));aspect-ratio:2400/1950}
+.map img{width:100%;height:100%;display:block}
+.dot{position:absolute;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#d0021b;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);box-sizing:border-box}
+.dot.approx{background:rgba(208,2,27,.55)}
+.credit{position:fixed;right:4px;bottom:2px;font:10px sans-serif;color:#888}
+</style>
+<script src="m0.js"></script>
+<script src="m1.js"></script>
+<script src="m2.js"></script>
+<script src="m3.js"></script>
+<script src="m4.js"></script>
+<script src="m5.js"></script>
+<script src="m6.js"></script>
+<script src="m7.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var b="";
+  for(var i=0;i<8;i++) b+=window["__m"+i];
+  document.getElementById("mapimg").src="data:image/webp;base64,"+b;
+});
+</script>
+</head>
+<body><div class="map"><img id="mapimg" alt="Sigtuna map" width="1600" height="1300">
+<div class="dot" style="left:81.625%;top:18.154%" title="Dominican convent (Svartbrödraklostret)" data-id="dominikankonventet"></div>
+<div class="dot" style="left:72.500%;top:47.231%" title="Drakegården" data-id="drakegarden"></div>
+<div class="dot approx" style="left:56.375%;top:70.923%" title="Unknown church on the museum plot ('Kyrka 1'; 1993 bishop's grave)" data-id="kyrka-1-museitomten"></div>
+<div class="dot" style="left:58.000%;top:66.769%" title="Lilla torget" data-id="lilla-torget"></div>
+<div class="dot approx" style="left:67.375%;top:55.846%" title="Lundströmska gården" data-id="lundstromska-garden"></div>
+<div class="dot" style="left:80.250%;top:12.923%" title="Mariakyrkan (S:ta Maria)" data-id="mariakyrkan"></div>
+<div class="dot" style="left:53.750%;top:70.154%" title="Museitomten / Sigtuna museum (Kv. S:ta Gertrud)" data-id="museitomten"></div>
+<div class="dot" style="left:70.000%;top:38.000%" title="Sigtuna rådhus" data-id="radhuset"></div>
+<div class="dot" style="left:61.000%;top:38.769%" title="S:t Lars kyrkoruin (tower)" data-id="st-lars"></div>
+<div class="dot approx" style="left:54.000%;top:47.846%" title="S:t Nicolaus (S:t Nicolai)" data-id="st-nicolaus"></div>
+<div class="dot" style="left:68.375%;top:14.462%" title="S:t Olofs kyrkoruin" data-id="st-olof"></div>
+<div class="dot" style="left:17.500%;top:52.154%" title="S:t Pers kyrkoruin" data-id="st-per"></div>
+<div class="dot" style="left:72.625%;top:40.615%" title="Stora torget" data-id="stora-torget"></div>
+<div class="dot approx" style="left:71.500%;top:51.692%" title="Tant Bruns kaffestuga" data-id="tant-bruns-kaffestuga"></div>
+</div>
+<div class="credit">© OpenStreetMap contributors</div>
+</body></html>
